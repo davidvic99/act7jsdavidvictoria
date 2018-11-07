@@ -9,17 +9,15 @@ solucion = 0;
 //Script    
     x = posArray;
     alert(`La operacion presentada es ${numero1} ${operaciones[x]} ${numero2}`);
-    var solucion = Number(prompt("Introduce tu solucion"));
-  
-    console.log(typeof(solucion))
+    var solucion = parseInt(prompt("Introduce tu solucion"));
    
     var operador = operaciones[x];
 
     if(operador === "+"){
-    var evaluacion= eval(numero1 + numero2)
+    var evaluacion= eval(numero1 + numero2);
         if(evaluacion != solucion){
            
-            alert(`Has fallado. La solucion era ${evaluacion} mientras que tu pusiste ${solucion}`)
+            alert(`Has fallado. La solucion era ${evaluacion} mientras que tu pusiste ${solucion}`);
            
         
         }else{
@@ -29,9 +27,9 @@ solucion = 0;
     }
 
     if(operador === "-"){
-        var evaluacion= eval(numero1 - numero2)
+        var evaluacion= eval(numero1 - numero2);
         if(solucion != evaluacion){
-            alert(`Has fallado. La solucion era ${evaluacion} mientras que tu pusiste ${solucion}`)
+            alert(`Has fallado. La solucion era ${evaluacion} mientras que tu pusiste ${solucion}`);
             
         }else{
             alert(`Has acertado. Solución = ${evaluacion}`);
